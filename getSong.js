@@ -4,6 +4,14 @@ const config = require('./config/default.json');
 const url = 'https://deezerdevs-deezer.p.rapidapi.com';
 
 module.exports = {
+
+  /**
+  * Function that makes a request to the API to search for music.
+  * @param {string} someString - the name of the song or artist
+  * @return {object}
+  * @author V1ns3nt0
+  */
+
   searchSong: (someString) => axios({
       "method":"GET",
       "url":`${url}/search`,

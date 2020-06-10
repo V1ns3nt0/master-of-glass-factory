@@ -4,7 +4,8 @@
   "description": "This telegram bot is the wisest of all the representatives of the Committee of masters of glass factories.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "jsdoc -d docs --configure jsconf.json index.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
     "nodemon": "^2.0.4",
     "request": "^2.88.2",
     "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.4"
   }
 }

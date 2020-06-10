@@ -1,0 +1,29 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "This telegram bot is the wisest of all the representatives of the Committee of masters of glass factories.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V1ns3nt0/master-of-glass-factory.git"
+  },
+  "author": "V1ns3nt0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/V1ns3nt0/master-of-glass-factory/issues"
+  },
+  "homepage": "https://github.com/V1ns3nt0/master-of-glass-factory#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "config": "^3.3.1",
+    "jikan-nodejs": "0.0.28",
+    "node-shikimori": "^1.0.2",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2",
+    "telegraf": "^3.38.0"
+  }
+}

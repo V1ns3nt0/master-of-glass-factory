@@ -119,12 +119,16 @@ class SceneGenerator {
       if (song) {
         await ctx.reply('Hmm, wakarimasu. Give me a few seconds');
         getSongs.searchSong(song).then(res => {
-          let message = ``;
-          res.data.forEach((item, i) => {
-            message = message + `${i+1}.) Title: ${item.title}. Artist: ${item.artist.name}
+          if (res.data.length == 0) {
+              ctx.reply('Nothig');
+          } else {
+            let message = ``;
+            res.data.forEach((item, i) => {
+              message = message + `${i+1}.) Title: ${item.title}. Artist: ${item.artist.name}
 Link: ${item.link} \n\n`;
-          });
-          ctx.reply(`I found something. \n ${message}`);
+            });
+            ctx.reply(`I found something. \n ${message}`);
+          }
         });
         await ctx.scene.leave();
       } else {
